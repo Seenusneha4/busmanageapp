@@ -6,6 +6,7 @@ import Addbus from './Components/Addbus';
 import Searchbus from './Components/Searchbus';
 import Header from './Components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Viewbus from './Components/Viewbus';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
      <Routes>
        <Route path="/" exact element={<Addbus/>}/>
        <Route path="/search" exact element={<Searchbus/>}/>
-       <Route path="/view" exact element={<Addbus/>}/>
+       <Route path="/view" exact element={<Viewbus/>}/>
      </Routes>
      </BrowserRouter>
     </div>
