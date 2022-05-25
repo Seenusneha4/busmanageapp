@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Addbus from './Components/Addbus';
+import Searchbus from './Components/Searchbus';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
 
       <Addbus/>
+      <Searchbus/>
     </div>
   );
 }
