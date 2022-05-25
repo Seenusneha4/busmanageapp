@@ -4,14 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Addbus from './Components/Addbus';
 import Searchbus from './Components/Searchbus';
+import Header from './Components/Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div>
-
-      <Addbus/>
-      <Searchbus/>
+     <BrowserRouter>
+     <Routes>
+       <Route path="/" exact element={<Addbus/>}/>
+       <Route path="/search" exact element={<Searchbus/>}/>
+       <Route path="/view" exact element={<Addbus/>}/>
+     </Routes>
+     </BrowserRouter>
     </div>
   );
 }
